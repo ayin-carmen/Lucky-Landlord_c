@@ -65,6 +65,7 @@ int main() {
 	int deleteCount;//目前可以删除的次数
 	int refreshCount;//目前可以刷新的次数
 	int essenceCount;//目前玩家持有的精华币
+	int count;//每轮删除的道具
 	vector<Thing*>playerItem;//目前玩家所持有的物品
 	vector<Props*>playerScene;//目前玩家所持有的道具
 	vector<Essence*>playerEssence;//目前玩家所持有的精华

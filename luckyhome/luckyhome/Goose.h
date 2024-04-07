@@ -10,7 +10,7 @@
 class Goose : public Thing {
 public:
     Goose();
-    int calculateMoney(vector<Thing*>& category);
+    int calculateMoney(vector<Thing*>& category, vector<Thing*>& playerItem);
     Goose* createNewItem();
 
 
