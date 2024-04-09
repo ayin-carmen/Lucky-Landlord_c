@@ -4,6 +4,7 @@
 #include<map>
 #include<string>
 #include<iostream>
+#include<vector>
 using namespace std;
 
 
@@ -44,11 +45,37 @@ public:
 	int getCounter();
 	void setCounter(int counter);
 
+	int getCounter_now();
+	void setCounter_now(int counterr_now);
+
 	int getAccumulator();
 	void setAccumulator(int Accumulator);
 
 	int getPosition();
 	void setPosition(int position);
+	
+
+	//第一种子类函数
+	virtual int calculateMoney(vector<Thing*> category);
+	//第一种类型
+	virtual int calculateMoney(vector<Thing*>* category);
+	//第二种类型
+	virtual int calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerItem);
+	//第三种	类型
+	virtual int calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem);
+	//第四种类型
+	virtual int calculateMoney(std::vector<Thing*>* category, int counter, int counter_now);
+
+	//第二种子类函数
+	virtual bool isNear(int position1, int position2);
+
+	//第三种子类函数
+	virtual Thing* createNewItem();
+
+	//第四种子类函数
+	//第一种类型
+
+
 };
 
 

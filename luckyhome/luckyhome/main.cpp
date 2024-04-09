@@ -46,13 +46,6 @@
 //导入道具删除存储函数
 #include"../luckyhome/PropsDelete.h"
 
-
-
-
-
-
-
-
 //导入精华删除存储函数
 #include"../luckyhome/EssenceDelete.h"
 
@@ -65,7 +58,6 @@ int main() {
 	int deleteCount;//目前可以删除的次数
 	int refreshCount;//目前可以刷新的次数
 	int essenceCount;//目前玩家持有的精华币
-	int count;//每轮删除的道具
 	vector<Thing*>playerItem;//目前玩家所持有的物品
 	vector<Props*>playerScene;//目前玩家所持有的道具
 	vector<Essence*>playerEssence;//目前玩家所持有的精华
@@ -125,6 +117,8 @@ int main() {
 	punchboardItem.push_back(new Bee());
 	punchboardItem.push_back(new Pearl());
 	punchboardItem.push_back(new Flower());
+
+
 
 	//每关要缴纳的房租的初始化,总共12关
 	Rent.push_back(25);

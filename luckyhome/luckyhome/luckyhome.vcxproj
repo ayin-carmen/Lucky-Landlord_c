@@ -159,7 +159,6 @@
     <ClInclude Include="MonkeyOlivander.h" />
     <ClInclude Include="Props.h" />
     <ClInclude Include="PropsDelete.h" />
-    <ClInclude Include="PropsTraversal.h" />
     <ClInclude Include="Rain.h" />
     <ClInclude Include="RainCloud.h" />
     <ClInclude Include="RainCloud_k.h" />
@@ -167,7 +166,6 @@
     <ClInclude Include="Strawberry.h" />
     <ClInclude Include="Sun.h" />
     <ClInclude Include="Thing.h" />
-    <ClInclude Include="thingTraversal.h" />
     <ClInclude Include="Treasure.h" />
   </ItemGroup>
   <ItemGroup>
@@ -204,7 +202,6 @@
     <ClCompile Include="Pearl.h" />
     <ClCompile Include="Props.cpp" />
     <ClCompile Include="PropsDelete.cpp" />
-    <ClCompile Include="PropsTraversal.cpp" />
     <ClCompile Include="Rain.cpp" />
     <ClCompile Include="RainCloud.cpp" />
     <ClCompile Include="RainCloud_k.cpp" />
@@ -212,7 +209,6 @@
     <ClCompile Include="Strawberry.cpp" />
     <ClCompile Include="Sun.cpp" />
     <ClCompile Include="Thing.cpp" />
-    <ClCompile Include="thingTraversal.cpp" />
     <ClCompile Include="Treasure.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

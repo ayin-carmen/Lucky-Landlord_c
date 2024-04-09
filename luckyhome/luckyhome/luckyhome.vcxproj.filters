@@ -156,12 +156,6 @@
     <ClInclude Include="EssenceDelete.h">
       <Filter>头文件\Normal_function_h</Filter>
     </ClInclude>
-    <ClInclude Include="thingTraversal.h">
-      <Filter>头文件\Normal_function_h</Filter>
-    </ClInclude>
-    <ClInclude Include="PropsTraversal.h">
-      <Filter>头文件\Normal_function_h</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Thing.cpp">
@@ -285,12 +279,6 @@
       <Filter>源文件\Normal_function</Filter>
     </ClCompile>
     <ClCompile Include="EssenceDelete.cpp">
-      <Filter>源文件\Normal_function</Filter>
-    </ClCompile>
-    <ClCompile Include="thingTraversal.cpp">
-      <Filter>源文件\Normal_function</Filter>
-    </ClCompile>
-    <ClCompile Include="PropsTraversal.cpp">
       <Filter>源文件\Normal_function</Filter>
     </ClCompile>
   </ItemGroup>

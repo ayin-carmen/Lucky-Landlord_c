@@ -1,2 +1,5 @@
-﻿  EssenceDelete.cpp
-  luckyhome.vcxproj -> C:\Users\Administrator\Desktop\Lucky-Landlord_c\luckyhome\x64\Debug\luckyhome.exe
+﻿  Pearl.cpp
+  Pearl.h
+  正在生成代码...
+x64\Debug\Pearl.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  luckyhome.vcxproj -> C:\Users\Yang\Desktop\luckyhome\x64\Debug\luckyhome.exe

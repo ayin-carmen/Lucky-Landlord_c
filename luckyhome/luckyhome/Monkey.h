@@ -15,10 +15,10 @@ private:
 public:
     Monkey();
 
-    int calculateMoney(std::vector<Thing*>& category, std::vector<Thing*>& playerScene);
-    Monkey* createNewItem();
-    void setPosition(int newPosition);
-    bool isNear(int index, int position);
+    int calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem) override;
+    Monkey* createNewItem() override;
+    //void setPosition(int newPosition);
+    bool isNear(int position1, int position2) override;
 };
 
 #endif // MONKEY_H
