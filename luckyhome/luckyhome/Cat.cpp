@@ -15,6 +15,8 @@ int Cat::calculateMoney(std::vector<Thing*>* category) {
             (*category)[i] = new Empty(); // Ïû³ıÅ£ÄÌ
         }
     }
+    //²âÊÔ
+    cout << "1";
     return value;
 }
 
