@@ -12,7 +12,7 @@ private:
     int position;
 public:
     Halfcoconut();
-    int calculateMoney(vector<Thing*> category) override;
+    int calculateMoney(vector<Thing*>* category) override;
     Halfcoconut* createNewItem() override;
     bool isNear(int position1, int position2) override;
     //void setPosition(int newposition);

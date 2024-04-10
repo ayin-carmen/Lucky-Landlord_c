@@ -11,6 +11,7 @@ int Key::calculateMoney(std::vector<Thing*>* category) {
     for (int i = 0; i < 20; i++) {
         if ((*category)[i]->getName() == "treasure" && isNear(i, position)) {
             value += 50;
+            delete (*category)[i];//释放指针
             (*category)[i] = new Empty();
             // OwnPosition 即这个元素自己的位置
             //int OP = (position.getRow() * 5) + position.getColumn();
@@ -19,6 +20,7 @@ int Key::calculateMoney(std::vector<Thing*>* category) {
         }
         else if ((*category)[i]->getName() == "lockbox" && isNear(i, position)) {
             value += 15;
+            delete (*category)[i];//释放指针
             (*category)[i] = new Empty();
             // OwnPosition 即这个元素自己的位置
             //int OP = (position.getRow() * 5) + position.getColumn();
@@ -27,6 +29,7 @@ int Key::calculateMoney(std::vector<Thing*>* category) {
         }
         else if ((*category)[i]->getName() == "hugetreasure" && isNear(i, position)) {
             value += 100;
+            delete (*category)[i];//释放指针
             (*category)[i] = new Empty();
             // OwnPosition 即这个元素自己的位置
             //int OP = (position.getRow() * 5) + position.getColumn();
@@ -35,6 +38,7 @@ int Key::calculateMoney(std::vector<Thing*>* category) {
         }
         else if ((*category)[i]->getName() == "steelsafe" && isNear(i, this->getPosition())) {
             value += 30;
+            delete (*category)[i];//释放指针
             (*category)[i] = new Empty();
             // OwnPosition 即这个元素自己的位置
             //int OP = (position.getRow() * 5) + position.getColumn();

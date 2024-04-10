@@ -15,6 +15,7 @@ int Bubble::calculateMoney(std::vector<Thing*>* category, int counter, int count
         for (int i = 0; i < 20; i++) {
             if ((*category)[i]->getName() == "bubble") {
                 value += 9;
+                delete (*category)[i];//释放指针
                 (*category)[i] = new Empty(); // 消除自身
             }
         }
