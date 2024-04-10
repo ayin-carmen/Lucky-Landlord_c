@@ -10,7 +10,7 @@
 class Goose : public Thing {
 public:
     Goose();
-    int calculateMoney(vector<Thing*> category) override;
+    int calculateMoney(vector<Thing*>* category) override;
     Goose* createNewItem() override;
 
 

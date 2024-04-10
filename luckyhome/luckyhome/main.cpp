@@ -48,7 +48,7 @@
 
 //导入精华删除存储函数
 #include"../luckyhome/EssenceDelete.h"
-
+#include"../luckyhome/thingTraversal.h"
 
 using namespace std;
 
@@ -145,7 +145,6 @@ int main() {
 	//精华删除和存储
 	EssenceDelete(&playerEssence, &deadEssence);
 	//bug::最后两个精华的问题没解决
-
 
 	cout << initalizeEssence[0]->calculateMoney(1) << endl;
 	cout << initalizeScene[0]->getName() << endl;
