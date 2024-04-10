@@ -12,6 +12,7 @@ int Fish::calculateMoney(std::vector<Thing*> category) {
     for (int i = 0; i < 20; i++) {
         if (category[i]->getName() == "bubble" && isNear(i, this->getPosition())) {
             value += 4;
+            delete (*category)[i];// Õ∑≈÷∏’Î
             category[i] = new Empty();
         }
     }

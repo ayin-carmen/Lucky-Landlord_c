@@ -6,12 +6,13 @@ Halfcoconut::Halfcoconut() : Thing() {
     setDescribe("价值1枚金币,被消除后给予4金币");
 }
 
-int Halfcoconut::calculateMoney(std::vector<Thing*> category) {
+int Halfcoconut::calculateMoney(std::vector<Thing*>* category) {
     int value = 1;
     for (int i = 0; i < 20; i++) {
-        if (category[i]->getName() == "milk" && isNear(i, this->getPosition())) {
+        if ((*category)[i]->getName() == "milk" && isNear(i, this->getPosition())) {
             value += 9;
-            category[position] = new Empty(); // 消除自身
+            delete (*category)[position];//释放指针
+            (*category)[position] = new Empty(); // 消除自身
         }
     }
     return value;

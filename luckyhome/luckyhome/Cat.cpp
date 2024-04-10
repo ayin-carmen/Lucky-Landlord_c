@@ -12,6 +12,7 @@ int Cat::calculateMoney(std::vector<Thing*>* category) {
     for (int i = 0; i < 20; i++) {
         if ((*category)[i]->getName() == "milk" && isNear(i, this->getPosition())) {
             value += 9;
+            delete (*category)[i];//ÊÍ·ÅÖ¸Õë
             (*category)[i] = new Empty(); // Ïû³ıÅ£ÄÌ
         }
     }
