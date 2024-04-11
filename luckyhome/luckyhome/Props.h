@@ -7,6 +7,9 @@
 #include<vector>
 #include"../luckyhome/Thing.h"
 using namespace std;
+
+class Thing;
+
 //关于道具的类
 class Props {
 protected:

@@ -81,7 +81,7 @@ int Thing::calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* pl
 	return 0;
 }
 //类型4
-int Thing::calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem) {
+int Thing::calculateMoney(std::vector<Thing*>* category, std::vector<Props*>* playerScene, std::vector<Thing*>* playerItem) {
 	return 0;
 }
 //类型5

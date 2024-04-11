@@ -7,6 +7,9 @@
 #include"../luckyhome/Thing.h"
 #include<vector>
 using namespace std;
+
+class Thing;
+
 //关于精华的类
 class Essence {
 protected:

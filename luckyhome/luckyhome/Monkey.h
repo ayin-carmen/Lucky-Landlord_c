@@ -15,7 +15,7 @@ private:
 public:
     Monkey();
 
-    int calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem) override;
+    int calculateMoney(std::vector<Thing*>* category, std::vector<Props*>* playerScene, std::vector<Thing*>* playerItem) override;
     Monkey* createNewItem() override;
     //void setPosition(int newPosition);
     bool isNear(int position1, int position2) override;

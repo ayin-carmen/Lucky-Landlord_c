@@ -6,7 +6,7 @@ Monkey::Monkey() {
     setDescribe("价值2枚金币,如果老虎机面板上有空格,可以消除相邻的椰子（生成半个椰子）和半个椰子");
 }
 
-int Monkey::calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem) {//计算价值
+int Monkey::calculateMoney(std::vector<Thing*>* category, std::vector<Props*>* playerScene, std::vector<Thing*>* playerItem) {//计算价值
     int value = 2;
     for (int i = 0; i < 20; i++) {
         if (isNear(i, this->getPosition())) {
