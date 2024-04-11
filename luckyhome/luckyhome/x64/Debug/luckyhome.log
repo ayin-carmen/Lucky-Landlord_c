@@ -1,0 +1,12 @@
+﻿  Fish.cpp
+  Goose.cpp
+C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\luckyhome\Goose.cpp(21,19): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  main.cpp
+C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\luckyhome\main.cpp(57,6): warning C4101: “dayCount”: 未引用的局部变量
+C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\luckyhome\main.cpp(56,6): warning C4101: “playergold”: 未引用的局部变量
+C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\luckyhome\main.cpp(60,6): warning C4101: “essenceCount”: 未引用的局部变量
+C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\luckyhome\main.cpp(58,6): warning C4101: “deleteCount”: 未引用的局部变量
+C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\luckyhome\main.cpp(59,6): warning C4101: “refreshCount”: 未引用的局部变量
+  thingTraversal.cpp
+  正在生成代码...
+  luckyhome.vcxproj -> C:\Users\Yang\source\repos\Lucky-Landlord_c\luckyhome\x64\Debug\luckyhome.exe
