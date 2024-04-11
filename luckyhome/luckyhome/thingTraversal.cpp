@@ -32,9 +32,9 @@ void thingTraversal(vector<Thing*>* initalizeItem, vector<Thing*>* punchboardIte
 			((*punchboardItem)[j]->calculateMoney((*punchboardItem)));
 			dailyMoney += ((*punchboardItem)[j]->calculateMoney(punchboardItem));
 			((*punchboardItem)[j]->calculateMoney(punchboardItem));
-			/*dailyMoney += ((*punchboardItem)[j]->calculateMoney(punchboardItem, playerItem));
+			dailyMoney += ((*punchboardItem)[j]->calculateMoney(punchboardItem, playerItem));
 			(*punchboardItem)[j]->calculateMoney(punchboardItem, playerItem);
-			dailyMoney += ((*punchboardItem)[j]->calculateMoney(punchboardItem,playerScene,playerItem));*/
+			dailyMoney += ((*punchboardItem)[j]->calculateMoney(punchboardItem,playerScene,playerItem));
 		}
 	}
 }
