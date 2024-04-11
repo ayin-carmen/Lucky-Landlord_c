@@ -12,14 +12,15 @@ void thingTraversal(vector<Thing*>* initalizeItem, vector<Thing*>* playerItem, i
 			size_t length = (*playerItem).size();
 		}
 	}
-	
-	
 
-	/*for (int i = 1; i <= 4; i++)
+	for (int i = 1; i <= 4; i++)
 	{
 		for (size_t j = 0; j < length; j++)
 		{
-			dailyMoney += ((*playerItem)[j] ->);
+			dailyMoney += ((*playerItem)[j] -> calculateMoney((* playerItem)));
+			/*((*playerItem)[j]->calculateMoney((*playerItem)));*/
+			dailyMoney += ((*playerItem)[j]->calculateMoney(playerItem));
+
 		}
-	}*/
+	}
 }

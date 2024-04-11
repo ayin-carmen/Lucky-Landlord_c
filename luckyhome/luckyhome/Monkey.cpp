@@ -17,6 +17,7 @@ int Monkey::calculateMoney(std::vector<Thing*>* category, std::vector<Props*>* p
             }
             else if ((*category)[i]->getName() == "halfcoconut") {
                 value += 4;
+                delete (*category)[i];// Õ∑≈÷∏’Î
                 (*category)[i] = new Empty();
             }
         }
