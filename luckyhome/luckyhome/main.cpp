@@ -70,6 +70,7 @@ int main() {
 	vector<Thing*>punchboardItem;//老虎机中的物品
 	vector<int>Rent;//存储玩家每关要缴纳的房租
 
+
 	//物品初始化
 	initalizeItem.push_back(new Bee());
 	initalizeItem.push_back(new Bubble());

@@ -1,16 +1,14 @@
 #pragma once
-#ifndef _PROPS_H_
-#define _PROPS_H_
+#ifndef PROPS_H_
+#define PROPS_H_
 #include<map>
 #include<string>
 #include<iostream>
 #include<vector>
 #include"../luckyhome/Thing.h"
 using namespace std;
-
-class Thing;
-
 //关于道具的类
+class Thing;
 class Props {
 protected:
 	string name;		//道具的名字
