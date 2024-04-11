@@ -6,16 +6,31 @@ Monkey::Monkey() {
     setDescribe("价值2枚金币,如果老虎机面板上有空格,可以消除相邻的椰子（生成半个椰子）和半个椰子");
 }
 
-int Monkey::calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem) {//计算价值
+int Monkey::calculateMoney(std::vector<Thing*>* category, std::vector<Props*>* playerScene, std::vector<Thing*>* playerItem, std::vector<Essence*>* playerEssence) {//计算价值
     int value = 2;
+    int Length = playerEssence->size();
     for (int i = 0; i < 20; i++) {
         if (isNear(i, this->getPosition())) {
             if ((*category)[i]->getName() == "coconut") {
+                for (int j = 0; j < Length; j++) {
+                    if ((*playerEssence)[j]->getName() == "猴子奥利凡德") {
+                        if ((*playerEssence)[j]->getDied() == 0) {
+                            (*playerEssence)[j]->setDied(1);
+                        }
+                    }
+                }
                 value += 10;
                 (*category)[i] = new Halfcoconut();
                 (*playerItem).push_back(new Halfcoconut());
             }
             else if ((*category)[i]->getName() == "halfcoconut") {
+                for (int j = 0; j < Length; j++) {
+                    if ((*playerEssence)[j]->getName() == "猴子奥利凡德") {
+                        if ((*playerEssence)[j]->getDied() == 0) {
+                            (*playerEssence)[j]->setDied(1);
+                        }
+                    }
+                }
                 value += 4;
                 delete (*category)[i];//释放指针
                 (*category)[i] = new Empty();
@@ -28,6 +43,13 @@ int Monkey::calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* p
         }
     }
 
+    for (int j = 0; j < Length; j++) {
+        if ((*playerEssence)[j]->getName() == "猴子奥利凡德") {
+            if ((*playerEssence)[j]->getDied() == 1) {
+                value *= 2;
+            }
+        }
+    }
     return value;
 }
 

@@ -1,11 +1,15 @@
 #pragma once
-#ifndef _THING_H_
-#define _THING_H_
+#ifndef THING_H_
+#define THING_H_
 #include<map>
 #include<string>
 #include<iostream>
 #include<vector>
+#include"../luckyhome/Essence.h"
+#include"../luckyhome/Props.h"
 using namespace std;
+class Essence;
+class Props;
 
 
 //关于物品的类
@@ -62,7 +66,7 @@ public:
 	//第二种类型
 	virtual int calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerItem);
 	//第三种	类型
-	virtual int calculateMoney(std::vector<Thing*>* category, std::vector<Thing*>* playerScene, std::vector<Thing*>* playerItem);
+	virtual int calculateMoney(std::vector<Thing*>* category, std::vector<Props*>* playerScene, std::vector<Thing*>* playerItem, std::vector<Essence*>* playerEssence);
 	//第四种类型
 	virtual int calculateMoney(std::vector<Thing*>* category, int counter, int counter_now);
 

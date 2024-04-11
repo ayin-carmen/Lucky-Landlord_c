@@ -4,6 +4,8 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include <cstdlib>
+#include <ctime>
 #include "../luckyhome/Thing.h"
 #include "../luckyhome/Props.h"
 #include "../luckyhome/Essence.h"
@@ -34,6 +36,6 @@
 #include"../luckyhome/Treasure.h"
 using namespace std;
 
-void thingTraversal(vector<Thing*>* playerItem, int dailyManey);
+void thingTraversal(vector<Thing*>* initalizeItem, vector<Thing*>* punchboardItem, vector<Props*>* playerScene,  vector<Thing*>* playerItem, int dailyMoney);
 
 #endif

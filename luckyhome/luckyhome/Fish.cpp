@@ -7,13 +7,13 @@ Fish::Fish() : Thing() {
     setDescribe("价值1枚金币，消除周围的泡泡，每消除一个泡泡，获得4枚金币");
 }
 
-int Fish::calculateMoney(std::vector<Thing*> category) {
+int Fish::calculateMoney(std::vector<Thing*>* category) {
     int value = 1;
     for (int i = 0; i < 20; i++) {
-        if (category[i]->getName() == "bubble" && isNear(i, this->getPosition())) {
+        if ((*category)[i]->getName() == "bubble" && isNear(i, this->getPosition())) {
             value += 4;
             delete (*category)[i];//释放指针
-            category[i] = new Empty();
+            (*category)[i] = new Empty();
         }
     }
     return value;
