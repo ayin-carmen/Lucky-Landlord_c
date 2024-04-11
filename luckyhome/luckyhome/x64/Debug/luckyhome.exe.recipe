@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>C:\Users\Administrator\Desktop\Lucky-Landlord\luckyhome\x64\Debug\luckyhome.exe</FullPath>
+=======
+      <FullPath>C:\Users\ZhuanZ\Desktop\lucky_home\Lucky-Landlord_c\luckyhome\x64\Debug\luckyhome.exe</FullPath>
+>>>>>>> 736bfeed1b1a2bce501780fa3435c43423480e38
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
